@@ -1,0 +1,39 @@
+benqian=100000
+year=0
+while benqian<200000:
+    benqian=benqian*(1+0.067)
+    year+=1
+    print("第{0}年拿了{1}钱".format(year,benqian))
+else:
+    print("翻倍了")
+    
+def hello(person):
+    print("{0}你肿么了，你要是不理{1}，额就走咧".format(person,"大卫陈"))
+    print("{0}你快回来吧".format(person))
+p="虎叔"
+hello(p)
+
+def hello(person):
+    print("{0},你好，你怎么了".format(person))
+    return"我很好"
+p="Liming"
+res=hello(p)
+print(res)
+
+#九九乘法表
+for row in range(1,10):
+    
+    for col in range(1,row+1):
+        row=int(row)
+        col=int(col)
+        print(row*col,end=" ")
+    print("_______")
+
+#定义一个函数，打印一个九九乘法表
+def printline(row):
+    for col in range(1,row+1):
+        print(row*col,end=" ")
+    print(" ")
+for row in range(1,10):
+    printline(row)
+
