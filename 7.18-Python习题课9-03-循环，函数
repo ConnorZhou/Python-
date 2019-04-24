@@ -1,0 +1,276 @@
+for i in range(5):
+    for j in range(5):
+        print("* ",end='')
+    print()
+    
+    
+    
+for i in range(1,5):
+    for j in range(1,6):
+        if i==1 or i==4 or j==1 or j==5:
+            print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
+#打印一个菱形
+
+
+
+for i in range(1,6):
+    for j in range(1,7-i):
+        print(" ",end='')
+    for k in range(6-i,6):
+        print("* ",end='')
+    print()
+    
+    
+    
+for i in range(1,5):
+    for j in range(1,7-i):
+        print(" ",end='')
+    for k in range(6-i,6):
+        print("* ",end='')
+    print()
+for i in range(1,6):
+    for j in range(i):
+        print(" ",end='')
+    for k in range(6-i):
+        print("* ",end='')
+    print()
+    
+    
+    
+for i in range(1,5):
+    for j in range(1,7-i):
+        print(" ",end='')
+    for k in range(6-i,6):
+        if i==1 or j==6-i or j==5:
+            print("* ",end='')
+        else:
+            print('',end='')
+    print()
+for i in range(1,6):
+    for j in range(i):
+        print(" ",end='')
+    for k in range(6-i):
+        if i==5 or j==6 or 6-i-1:
+            print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
+for i in range(1,5):
+    for k in range(1,7-i):
+        print(end=" ")
+    for j in range(6-i,6):
+        if i==1 or j==6-i or j==5:
+            print("* ",end="")
+        else:
+            print(' ',end=" ")
+    print()
+for i in range(1,6):
+    for k in range(i):
+        print(end=" ")
+    for j in range(6-i):
+        if i==5 or j==0 or j==6-i-1:
+            print("* ",end="")
+        else:
+            print(" ",end=" ")
+    print()
+    
+    
+    
+for i in range(1,6):
+    for k in range(1,6-i):
+        print(" ",end='')
+    for j in range(6-i,9):
+        print("* ",end='')
+    print()
+    
+    
+    
+for i in range(1,6):
+    for k in range(1,6-i):
+        print(" ",end='')
+    for j in range(6-i,9):
+        if i==1 or i==5 or j==6-i or j==8:
+            print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
+for i in range(1,5):
+    for j in range(1,6):
+        print("* ",end='')
+    print()    
+    
+    
+    
+for i in range(1,5):
+    for j in range(1,6):
+        if i==1 or i==4 or j==1 or j==5:
+            print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
+input('请输入：')
+
+
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print("* ",end='')
+    print()
+    
+    
+    
+for i in range(1,6):
+    for j in range(6-i,6):
+        print("* ",end='')
+    print()
+    
+    
+    
+for i in range(1,6):
+    for j in range(6-i,6):
+        if i==1 or i==5 or j==6-i or j==5:
+            print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
+while 1:
+    def s_jx():
+        for i in range(1,5):
+            for j in range(1,6):
+                print("* ",end='')
+            print()
+            
+    def k_jx():
+        for i in range(1,5):
+            for j in range(1,6):
+                if i==1 or i==4 or j==1 or j==5:
+                    print("* ",end='')
+                else:
+                    print("  ",end='')
+            print()
+    
+    def s_sjx():
+        for i in range(1,6):
+            for j in range(6-i,6):
+                print("* ",end='')
+            print()
+    
+    def k_sjx():
+        for i in range(1,6):
+            for j in range(6-i,6):
+                if i==1 or i==5 or j==6-i or j==5:
+                    print("* ",end='')
+                else:
+                    print("  ",end='')
+            print()  
+            
+    shape=input('请输入实心矩形或空心矩形或实心直角等腰三角形或空心直角等腰三角形：')
+    if shape=='实心矩形':
+        s_jx()
+    elif shape=='空心矩形':
+        k_jx()
+    elif shape=='实心直角等腰三角形':
+        s_sjx()
+    elif shape=='空心直角等腰三角形':
+        k_sjx()
+    else:
+        print('查无此人！See U！')
+        
+        
+        
+for m in range(4):
+    for n in range(3):
+        if n==0:
+            print("* ",end='')
+        elif m==0 or m==3:
+            if n==2:
+                break
+            else:
+                print("* ",end='')
+        elif n==2:
+            if m==0 or m==3:
+                break
+            else:
+                print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+        
+        
+        
+        
+for m in range(3):
+    for n in range(3):
+        if n==0:
+            print("* ",end='')
+        elif m==0 or m==3:
+            if n==2:
+                break
+            else:
+                print("* ",end='')
+        elif n==2:
+            if m==0 or m==3:
+                break
+            else:
+                print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+for m in range(4):
+    for n in range(3):
+        if n==0:
+            print("* ",end='')
+        elif m==0 or m==3:
+            if n==2:
+                break
+            else:
+                print("* ",end='')
+        elif n==2:
+            if m==0 or m==3:
+                break
+            else:
+                print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
+for m in range(5):
+    for n in range(3):
+        if n==0:
+            print("* ",end='')
+        elif m==0 or m==3:
+            if n==2:
+                break
+            else:
+                print("* ",end='')
+        elif n==2:
+            if m==0 or m==3:
+                break
+            else:
+                print("* ",end='')
+        else:
+            print("  ",end='')
+    print()
+    
+    
+    
