@@ -1,0 +1,86 @@
+s1="i"
+s2="wang"
+s3= s1 + s2
+print(s3)
+print(len(s1))
+
+
+
+help(str.find)
+
+
+s='abcdefghiabdcdfdkdakfkafkahjfh'
+print(s.count('f'))
+
+
+
+s='I like dog'
+print(s.startswith('i'))
+print(s.startswith('I'))
+print("* - + "*5)
+print(s.endswith('g'))
+print(s.endswith('o'))
+
+
+
+print("     * *                  *  *         ")
+print("  *        *           *        *      ")
+print(" *           *       *           *     ")
+print("  *              *              *      ")
+print("   *                           *       ")
+print("     *                       *         ")
+print("       *                   *           ")
+print("         *               *             ")
+print("           *           *               ")
+print("                 *                     ")
+
+
+
+s='f狗gh'
+s1='FIGHT IN'
+s2='I Like Dog'
+print(s.istitle())
+print(s1.istitle())
+print(s2.istitle())
+
+
+
+s=' '
+print(s.isspace())
+
+
+
+s='日*疑*飞'
+list1=s.split('*')
+print(list1)
+
+
+
+s='''日照\n香炉\n生紫烟
+   遥看'''
+print(s.splitlines())
+
+
+
+s='abc'
+print(len(s))
+print(s.ljust(5)+'a')
+
+
+
+list1=[1,2,3,4,5]
+print(id(list1))
+list1.append(6)
+print(id(list1))
+print(list1)
+
+
+
+list1=[1,2,3,4,5]
+list2=list1.copy()
+print(list2)
+print(id(list1))
+print(id(list2))
+
+
+
