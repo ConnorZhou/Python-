@@ -1,0 +1,14 @@
+help(tuple)
+
+
+
+tuple1=(1,2,4,33,4)
+print(tuple1.index(4))
+print(tuple1.index(4,3,5))
+
+
+
+help(dict)
+
+
+
