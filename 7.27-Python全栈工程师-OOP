@@ -1,0 +1,177 @@
+class student():
+    name="dana"
+    age=18
+    def say(self):
+        self.name="aaaa"
+        self.age=200
+        print("My name is {0}".format(self.name))
+        print("My age is {0}".format(self.age))
+yueyue=student()
+yueyue.say()
+
+
+
+class Teacher():
+    name="dana"
+    age=19
+    def say(self):
+        self.name="yaona"
+        self.age=17
+        print("My name is {0}.".format(self.name))
+        print("My age is {0}.".format(self.age))
+    def sayAgain():
+        print("Hello")
+t=Teacher()
+t.say()
+print("*"*20)
+Teacher.sayAgain()
+        
+        
+        
+        
+class Teacher():
+    name="dana"
+    age=19
+    def say(self):
+        self.name="yaona"
+        self.age=17
+        print("My name is {0}.".format(self.name))
+        print("My age is {0}.".format(self.age))
+    def sayAgain():
+        print(__class__.name)
+        print(__class__.age)
+        print("Hello!")
+t=Teacher()
+t.say()
+Teacher.sayAgain()
+
+
+
+class Teacher():
+    name="dana"
+    age=19
+    def say(self):
+        self.name="yaona"
+        self.age=17
+        print("My name is {0}.".format(self.name))
+        print("My age is {0}.".format(__class__.age))
+    def sayAgain():
+        print(__class__.name)
+        print(__class__.age)
+
+t=Teacher()
+t.say()
+Teacher.sayAgain()
+
+
+
+class A():
+    name="Liu"
+    age=18
+    def __init__(self):
+        self.name="aaaa"
+        self.age=200
+    def say(self):
+        print(self.name)
+        print(self.age)
+class B():
+    name="bbbb"
+    age=90
+
+a=A()
+a.say()
+print("*"*20)
+A.say(a)
+print("*"*20)
+A.say(A)
+print("*"*20)
+A.say(B)
+
+
+
+class Person():
+    name="Liu"
+    __age=18
+P=Person()
+print(P.name)
+print(P.__age)
+
+
+
+class Person():
+    name="Liu"
+    __age=18
+P=Person()
+print(P.name)
+
+
+print(P._Person__age)
+
+
+
+class Dog():
+    def __init__(self):
+        print("I am init in dog")
+Kaka=Dog()
+
+
+
+class Animal():
+    pass
+class PaxingAni(Animal):
+    pass
+class Dog(PaxingAni):
+    def __init__(self):
+        print("I am init in dog")
+Kaka=Dog()
+
+
+
+class Animal():
+    pass
+class PaxingAni(Animal):
+    def __init__(self):
+        print("Paxing Dongwu")
+class Dog(PaxingAni):
+    def __init__(self):
+        print("I am init in dog")
+Kaka=Dog()
+
+
+
+class Animal():
+    pass
+class PaxingAni(Animal):
+    def __init__(self):
+        print("Paxing Dongwu")
+class Dog(PaxingAni):
+    def __init__(self):
+        print("I am init in dog")
+Kaka=Dog()
+
+
+
+class Animal():
+    def __init__(self):
+        print("Animal")
+class PaxingAni(Animal):
+    def __init__(self,name):
+        print("Paxing Dongwu {0}".format(name))
+class Dog(PaxingAni):
+    def __init__(self):
+        print("I am init in dog")
+d=Dog()
+class Cat(PaxingAni):
+    pass
+c=Cat("JSFHJK")
+
+
+
+class A():
+    pass
+class B(A):
+    pass
+print(A.__mro__)
+
+
+
