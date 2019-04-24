@@ -1,0 +1,53 @@
+def reg(name,age,gender="male"):
+    if gender=="male":
+        print("{0} is {1},and he is a good student".format(name,age))
+    else:
+        print("{0} is {1},ane she is a good student".format(name,age))
+
+reg("mingyue",21)
+
+reg("daiweiman",22,"famale")
+
+def reg_key(name,age,addr):
+    print("我是一个学生")
+    print("我叫{0}，我今年{1}岁,我住在{2}".format(name,age,addr))
+
+n="李娜"
+a=22
+d="上海"
+reg_key(age=a,name=n,addr=d)
+
+def stu(**kwargs):
+    print(type(kwargs))
+    for k,v in kwargs.items( ):
+        print(k,"......",v)
+stu(name="wang",age=18,addr="shagnhai",lover="me")
+print("*"*20)
+stu(name="zhoudashen")
+
+def stu(name,age,*args,hobby="没有",**kwargs):
+    print("i am {0},i am {1} years old. ".format(name,age))
+    if hobby=="没有":
+        print("我没有爱好")
+    else:
+        print("我的爱好是{0}。".format(hobby))
+    print("*"*20)
+    for i in args:
+        print(i)
+    for k,v in kwargs.items( ):
+        print(k,"..........",v)
+
+name="周"
+age=22
+stu(name,age,"wang","刘",hobby="游泳",hobby2="烹饪",hobby3="看书")
+
+def func_1():
+    print("有返回值啊")
+    return 1
+def func_2():
+    print("没有返回值的呀")
+    
+f1=func_1()
+print(f1)
+f2=func_2()
+print(f2)
